@@ -1,3 +1,9 @@
+// import React, { Component } from 'react'
+// class App extends Componentt {
+//   render() {
+//     return <div><h1>Hello, world!</h1></div>
+//   }
+// }
 function App() {
   return (
     <div className="App">
