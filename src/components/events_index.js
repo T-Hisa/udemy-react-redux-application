@@ -8,17 +8,19 @@ class EventsIndex extends Component {
   componentDidMount() {
     this.props.readEvents()
   }
+
   renderEvents() {
     return _.map(this.props.events, event => {
       return (
         <tr key={event.id}>
           <td>{ event.id }</td>
-          <td>{ event.title }</td>
+          <td><Link to={`/events/${event.id}`}>{ event.title }</Link></td>
           <td>{ event.body }</td>
         </tr>
       )
     })
   }
+  
   render() {
     const props = this.props
     return (
